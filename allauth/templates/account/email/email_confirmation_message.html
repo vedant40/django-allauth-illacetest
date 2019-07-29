@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+{% load account %}{% user_display user as user_display %}
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <div class="inside-cont">
+        <div class="img-div">
+        <img class="logo-img"  src="https://repicture-api.repictureapp.com/media/crop-logo-title.png" width="50">
+        <h3 class="logo-txt" style="vertical-align: top; display: inline-block;">RePicture App</h3>
+        </div>
+        <br>
+        <h3>Welcome to the RePicture App!</h3>
+        <br>
+        <p class="name">Hi {{ user_display }},</p>
+        <p class="">Welcome and thanks for signing up. The RePicuture App connects students, engineers, and organizations to increase interest
+            and diversity in engineering. The App is developed by
+            <a href="http://repictureengineering.com/" target="_blank">RePicture Engineering</a>, a public benefit corporation that is telling the stories of engineers and engineering
+            projects to make engineering attractive and accessible to all.
+        </p>
+        <br>
+        <p class="verify">To verify your email and sign into your account go to the link below.
+        </p>
+        <a href="{{ activate_url }}">Confirm email</a>
+        <br>
+        <p class="">We hope you enjoy using the Repicture App to connect with others in the community, share what you’re working on, and help inspire the next generation.
+        </p>
+        <p class="">-Lynn and Aelisa</p>
+        <p class=""><i>Co-Founders of RePicture Engineering</i></p>
+        <br>
+        <p class="">-------</p>
+        <p class="">This email is intended for {{ user_display }}.</p>        <p class="">You're receiving this email because you or someone using this email created an account on the
+            <a href="https://beta.mycivilworld.com/">RePicture App {% domain_name %} </a> using this address.</p>
+
+    </div>
+</body>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    a ,.verify{
+       color: #57AEEF;
+    }
+
+    .inside-cont {
+        padding-right: 50px;                                                                                                                                                                                 77,8          Bot
+        padding-left: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 50px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+    }
+
+    .logo-img {
+        position: absolute;
+    }
+
+    .logo-txt {
+        margin-left: 60px;
+        margin-top: 15px;
+        display: -webkit-inline-box;
+    }
+    .img-div{
+    
+    }
+</style>
+
+</html>
+
+
