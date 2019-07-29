@@ -6,4 +6,4 @@ LOGIN_REDIRECT_URL = getattr(settings, 'LOGIN_REDIRECT_URL', '/')
 
 USER_MODEL = getattr(settings, 'AUTH_USER_MODEL', 'auth.User')
 
-DOMAIN_NAME = getattr(setiings, 'ALLAUTH_DOMAIN', 'www.repicture.com')
+DOMAIN_NAME = getattr(settings, 'ALLAUTH_DOMAIN', 'beta.repicture.com')
