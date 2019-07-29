@@ -20,6 +20,7 @@ try:
 except ImportError:
     from django.utils.encoding import force_unicode as force_text
 from allauth.compat import importlib
+from . import app_settings
 
 
 def _generate_unique_username_base(txts, regex=None):
