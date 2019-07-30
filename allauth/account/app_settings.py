@@ -129,7 +129,7 @@ class AppSettings(object):
         """
         Fetch Domain name from settings
         """
-        return self._setting("DOMAIN_NAME","https://www.repicture.com/")
+        return self._setting("DOMAIN_NAME","https://beta.repicture.com/")
 
     @property
     def SIGNUP_EMAIL_ENTER_TWICE(self):
