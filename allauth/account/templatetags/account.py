@@ -51,8 +51,8 @@ def do_user_display(parser, token):
     return UserDisplayNode(user, as_var)
 
 
-from .app_settings import DOMAIN_NAME
+#from .app_settings import DOMAIN_NAME
 
-@register.tag(name='domain_name')
-def display_domain_name()
-    return DOMAIN_NAME
+#@register.tag(name='domain_name')
+#def display_domain_name()
+#    return DOMAIN_NAME
